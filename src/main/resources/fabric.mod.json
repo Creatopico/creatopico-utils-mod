@@ -1,37 +1,37 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "creatopico_utils",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Creatopico Utils",
+	"description": "Some functional things for creatopico server",
 	"authors": [
-		"Me!"
+		"LittleLigr"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/creatopico_utils/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"ru.littleligr.CreatopicoUtils"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"ru.littleligr.CreatopicoUtilsClient"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
+		"creatopico_utils.mixins.json",
 		{
-			"config": "modid.client.mixins.json",
+			"config": "creatopico_utils.client.mixins.json",
 			"environment": "client"
 		}
 	],
 	"depends": {
 		"fabricloader": ">=0.14.22",
-		"minecraft": "~1.20.2",
+		"minecraft": ">=1.20",
 		"java": ">=17",
 		"fabric-api": "*"
 	},
